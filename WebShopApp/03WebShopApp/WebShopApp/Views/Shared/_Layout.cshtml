@@ -30,21 +30,19 @@
                         </li>
 
 
-                        @if((this.User.Identity.IsAuthenticated)&&(this.User.IsInRole("Administrator")))
+                        @if ((this.User.Identity.IsAuthenticated) && (this.User.IsInRole("Administrator")))
                         {
                             <li class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                dara-bs-toggle="dropdown" aria-expanded="false">
-                            Statistic Modul
-                        </button>
-
-                        <ul class=" dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a vlass="dropdown-item" href="/Statistics/Clients">Clients</a></li>
-                                    <li><a vlass="dropdown-item" href="/Statistics/Orders">Orders</a></li>
-                        </ul>
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Products  </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="/Product/Index">All Products</a></li>
+                                    <li><a class="dropdown-item" href="/Product/Create">Create Product</a></li>
+                                </ul>
                             </li>
                         }
                     </ul>
+
+
                     <partial name="_LoginPartial" />
                 </div>
             </div>

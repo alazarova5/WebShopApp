@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="6.0.23" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\WebShopApp.Infrastructure\WebShopApp.Infrastructure.csproj" />
   </ItemGroup>
 
