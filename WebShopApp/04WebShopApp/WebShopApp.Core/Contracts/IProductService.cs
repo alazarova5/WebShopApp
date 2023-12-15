@@ -17,5 +17,5 @@ namespace WebShopApp.Core.Contracts
         Product GetProductById(int productId);
         bool RemoveBy(int productId);
         List<Product> GetProducts(string searchCategoryName, string searchBrandName);
-    }
+      }
 }

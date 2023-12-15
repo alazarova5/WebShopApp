@@ -27,9 +27,6 @@ namespace WebShopApp.Infrastructure.Data.Domain
 
         [Range(0, 5000)]
         public int Quantity { get; set; }
-
-
-
         public decimal Price { get; set; }
         public decimal Discount { get; set; }
         public virtual IEnumerable<Order> orders { get; set; } = new List<Order>();
