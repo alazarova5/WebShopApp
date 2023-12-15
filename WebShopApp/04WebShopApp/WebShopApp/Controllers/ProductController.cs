@@ -214,5 +214,11 @@ namespace WebShopApp.Controllers
                 return View();
             }
         }
+
+
+        public IActionResult Success()
+        {
+            return this.View();  
+        }
     }
 }
